@@ -1,0 +1,21 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>flowchart</title>
+   {% comment %} <link rel="stylesheet" href="static/style.css"> {% endcomment %}
+</head>
+<body style="text-align:center">
+   <h1>Upload the file</h1>
+   <br>
+   <p>[jpg,png,docx,pdf]</p>
+   <br>
+   <form method = "post" enctype="multipart/form-data">
+       {% csrf_token %}
+       {{ form.as_p }}
+       <br>
+       <button type="submit">Upload</button>
+   </form>
+   
+</body>
+</html> 

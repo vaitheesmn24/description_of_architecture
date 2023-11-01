@@ -1,0 +1,16 @@
+body{
+    background-color:floralwhite;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+}
+
+.box {
+    width: 300px;
+    height: 150px;
+    
+    border: 2px solid #333;
+    padding: 20px;
+    text-align: center;
+    line-height: 1.5;
+}
