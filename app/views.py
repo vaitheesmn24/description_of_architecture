@@ -36,7 +36,7 @@ def uploadImage(request):
 
 
 def uploadok(request):
-    # print('------------------------------')
+    
     start=time.time()
     file_name = request.session.get("file_name")
     media = r"D:\architecture_description\media"
@@ -46,9 +46,7 @@ def uploadok(request):
 
     descripted = ""
     image_path=""
-    # print(file_path,'--------------')
-    # image_path=f"media/{file_name}"
-    # print(image_path,'---------')
+    
     
     try:
         # assert format_name in file_format, "file is invalid"
@@ -90,7 +88,7 @@ def uploadok(request):
     context={
          "imagepath": image_path, "file_name": descripted
     }
-    # print(time.time()-start,'-----------------------------------------------------------')
+    
     
     return render(
         request, "result.html",context
