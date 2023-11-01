@@ -4,7 +4,7 @@ import os
 # openai.api_key=os.getenv("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")
 
 # openai.api_key = "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"
-openai.api_key="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"
+openai.api_key="open-api-key"
 
 def create_prompt(list_of_services):
     prompt = f"These are  the services used in an architecture diagram.Create a detailed description based on these services: {', '.join(list_of_services)}.\n" \
